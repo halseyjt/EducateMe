@@ -1,13 +1,29 @@
 import React, {Component} from 'react';
+// import axios from 'axios';
 
 class App extends Component {
     constructor(props) {
         super(props)
-        this.state = {};
+        this.state = {
+            Lessons: [],
+
+          }
+
+        }
+    componentDidMount(){
+        this.getsubject()
+    }
+
+    
+
+
     }
     render() {
         return (
-            <div>Hello from app.jsx!!</div>
+            <H1>Educate Me</H1>
+            <button onClick = {Login}>
+                Login
+            </button>
         )
     }
 }
