@@ -11,10 +11,8 @@ class App extends Component {
 
         }
     componentDidMount(){
-        this.getsubject()
+        this.getlesson()
     }
-
-    
 
 
     }
