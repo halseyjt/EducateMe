@@ -1,13 +1,21 @@
 const express = require('express');
 const router = express.Router()
+const mathLesson = require('../db/seeds/mathLesson')
 
 // getting all info from DB
-router.get('/', (req, res) => {
-res.send('GOOD TEST')
-})
+router.get("/", async (req, res) => {
+  try {
+      const mathLessons = await mathLesson.find()
+
+  } catch (err) {
+      res.status(500).json({message: err.message})
+
+  }
+});
 
 // getting one thing from db 
 router.get('/:id', (req, res) => {
+    res.send(req.params.id)
 
 })
 
