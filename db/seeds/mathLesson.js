@@ -1,18 +1,18 @@
 const mongoose = require ('mongoose');
 
-const mathSchema = new mongoose.Schema ({
-    date:{
-        type: String,
-        default: Date.now
-    },
-    
-    lesson:
-        { 
-            name: String,
-            assignment: String,
-            submitted: Boolean
-        }
-
+const mathSchema = new mongoose.Schema({
+  lesson: {
+    name: String,
+  },
+  lessonDate: {
+    type: Date,
+    required: true,
+    default: Date.now,
+  },
+  assignment: {
+    name: String,
+    studentID: String,
+  },
 });
 
 

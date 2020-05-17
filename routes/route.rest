@@ -3,3 +3,13 @@ GET http://localhost:3000/lessons
 ###
 
 GET http://localhost:3000/lessons/25
+
+###
+
+POST http://localhost:3000/lessons
+Content-Type: application/json
+
+{
+    "lesson": "math lesson",
+    "assignment": "assignment submitted" 
+}

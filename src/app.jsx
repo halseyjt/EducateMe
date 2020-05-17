@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 class App extends Component {
     constructor(props) {
@@ -10,10 +10,9 @@ class App extends Component {
           }
 
         }
-    componentDidMount(){
-        this.getlesson()
-    }
-
+    // componentDidMount(){
+    //     this.getlesson()
+    // }
 
     }
     render() {
